@@ -6,37 +6,41 @@ import { Icon } from "astro-icon/components";
 	Find icons via guide: https://www.astroicon.dev/guides/customization/#open-source-icon-sets
 	Only installed pack is: @iconify-json/mdi
 */
-const socialLinks: {
-	friendlyName: string;
-	isWebmention?: boolean;
-	link: string;
-	name: string;
-}[] = [
+const socialLinks = [
 	{
 		friendlyName: "Github",
-		link: "https://github.com/artemkutsan/astro-citrus",
+		link: "https://github.com/dethan3/blog",
 		name: "mdi:github",
 	},
+	{
+		friendlyName: "X",
+		link: "https://x.com/0x99Ethan3",
+		name: "mdi:twitter",
+	},
+	// {
+	// 	friendlyName: "LinkedIn",
+	// 	link: "https://www.linkedin.com/in/dethan3",
+	// 	name: "mdi:linkedin",
+	// },
+	// {
+	// 	friendlyName: "YouTube",
+	// 	link: "https://www.youtube.com/channel/dethan3",
+	// 	name: "mdi:youtube",
+	// },
 ];
 ---
 
 <div class="flex flex-wrap items-end gap-x-2">
-	<p>Find me on</p>
-	<ul class="flex flex-1 items-center gap-x-2 sm:flex-initial">
-		{
-			socialLinks.map(({ friendlyName, isWebmention, link, name }) => (
-				<li class="flex">
-					<a
-						class="inline-block hover:text-link drop-shadow-[0px_2.5px_2.5px_rgba(0,0,0,0.175)]"
-						href={link}
-						rel={`noreferrer ${isWebmention ? "me authn" : ""}`}
-						target="_blank"
-					>
-						<Icon aria-hidden="true" class="h-8 w-8" focusable="false" name={name} />
-						<span class="sr-only">{friendlyName}</span>
-					</a>
-				</li>
-			))
-		}
-	</ul>
+	{socialLinks.map((link) => (
+		<a
+			class="inline-block hover:text-link drop-shadow-[0px_2.5px_2.5px_rgba(0,0,0,0.175)]"
+			href={link.link}
+			rel="noreferrer"
+			target="_blank"
+		>
+			<Icon aria-hidden="true" class="h-6 w-6" focusable="false" name={link.name} />
+			<span class="sr-only">{link.friendlyName}</span>
+		</a>
+	))}
 </div>
+

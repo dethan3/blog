@@ -146,7 +146,8 @@ export default defineConfig({
   },
   server: {
     // port: 1234,
-    host: true,
+    // host: true,
+    allowedHosts: ["4321-dethan3-blog-mfhqcbecooa.ws-us118.gitpod.io"],
   },
 });
 

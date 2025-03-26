@@ -1,29 +1,21 @@
-<div align="center">
-  <img alt="Astro Citrus logo" src="https://github.com/ArtemKutsan/astro-citrus/blob/main/src/assets/images/logo.svg" width="70" />
-</div>
-<h1 align="center">
-  Astro Citrus
-</h1>
+# Fogpath
 
-Astro Citrus is a simple opinionated starter built with the Astro framework. Use it to create an easy-to-use blog or website.
+This is Ethan's personal blog.
 
 ## Table Of Contents
 
 1. [Key Features](#key-features)
-2. [Demo](#demo)
-3. [Quick start](#quick-start)
-4. [Preview](#preview)
-5. [Commands](#commands)
-6. [Configure](#configure)
-7. [Updating](#updating)
-8. [Adding posts and notes](#adding-posts-and-notes)
+2. [Commands](#commands)
+3. [Configure](#configure)
+4. [Updating](#updating)
+5. [Adding posts and notes](#adding-posts-and-notes)
    - [Post Frontmatter](#post-frontmatter)
    - [Note Frontmatter](#note-frontmatter)
    - [Frontmatter Snippet](#frontmatter-snippet)
-9. [Pagefind search](#pagefind-search)
-10. [Analytics](#analytics)
-11. [Deploy](#deploy)
-12. [Acknowledgment](#acknowledgment)
+6. [Pagefind search](#pagefind-search)
+7. [Analytics](#analytics)
+8. [Deploy](#deploy)
+9. [License](#license)
 
 ## Key Features
 
@@ -44,32 +36,6 @@ Astro Citrus is a simple opinionated starter built with the Astro framework. Use
 - [Pagefind](https://pagefind.app/) static search library integration
 - [Astro Icon](https://github.com/natemoo-re/astro-icon) svg icon component
 - [Rehype Pretty Code](https://rehype-pretty.pages.dev/) code blocks and syntax highlighter
-
-## Demo
-
-Check out the [Demo](https://astrocitrus.netlify.app/)
-
-## Quick start
-
-[Create a new repo](https://github.com/artemkutsan/astro-citrus/generate) from this template.
-
-```bash
-# pnpm 7+
-pnpm create astro@latest -- --template artemkutsan/astro-citrus
-
-# pnpm
-pnpm dlx create-astro --template artemkutsan/astro-citrus
-```
-
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/artemkutsan/astro-citrus) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fartemkutsan%2Fastro-citrus&project-name=astro-citrus)
-
-## Preview
-
-| ![Light Theme 01](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot01.png?raw=true) | ![Light Theme 02](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot02.png?raw=true) |
-|-------------|-------------|
-| ![Dark Theme 03](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot03.png?raw=true) | ![Light Theme 04](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot04.png?raw=true) |
-| ![Light Theme 05](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot05.png?raw=true) | ![Light Theme 06](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot06.png?raw=true) |
-| ![Dark Theme 07](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot07.png?raw=true) | ![Dark Theme 08](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot08.png?raw=true) |
 
 ## Commands
 
@@ -170,10 +136,6 @@ You may be asked to included a snippet inside the **HEAD** tag of your website w
 
 By default the site will be built (see [Commands](#commands) section above) to a `/dist` directory.
 
-## Acknowledgment
-
-**This theme was inspired by [Astro Theme Cactus](https://github.com/chrismwilliams/astro-theme-cactus) by [Chriss Williams](https://github.com/chrismwilliams). Huge thanks to Chriss for his amazing work and inspiration!** 🚀👏
-
 ## License
 
-MIT
+[MIT](./LICENSE)
